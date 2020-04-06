@@ -1,0 +1,1740 @@
+{
+  "catalogue": {
+    "name": "Orcs",
+    "id": "9698-4b04-20b4-d6aa",
+    "authorContact": "therealbitpsycho@gmail.com",
+    "authorName": "BitPsycho",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "37f5-f8f9-2ecf-9c36",
+    "gameSystemRevision": 1,
+    "library": false,
+    "revision": 9,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "rules": [
+      {
+        "name": "GREEN TIDE (2)",
+        "id": "36b7-0c23-0843-b087",
+        "description": "Group Charge Action. Until the end of the Turn, all members of the group of Race ORC gain Crushing Strength (1) or increase their Crushing Strength by one if they already have this special rule.",
+        "hidden": false
+      }
+    ],
+    "selectionEntries": [
+      {
+        "name": "Orclings",
+        "id": "a49b-da25-eabc-7ce4",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "b655-8cd7-6520-ccac", "hidden": false, "primary": true, "targetId": "acf5-674c-f31b-80a2"}],
+        "constraints": [
+          {
+            "id": "c066-e731-cbd1-7926",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "3734-3c1c-d6b8-29c2",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          },
+          {
+            "id": "8276-f72c-43ce-0b65",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "419f-be21-35bf-41b8",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "b888-e3bd-8798-6364", "value": 10}],
+        "entryLinks": [
+          {
+            "name": "Items - Common",
+            "id": "5e13-4a25-3319-820a",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "c9c8-ac7b-333d-0312",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Rule Check - Base Unit Count",
+            "id": "4ef0-9282-883f-4133",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "dc91-bbea-46b0-1c4c",
+            "type": "selectionEntry"
+          }
+        ],
+        "infoLinks": [
+          {"name": "Swarm", "id": "8579-1e01-ee2a-96af", "hidden": false, "targetId": "1025-9473-ccb9-71b5", "type": "rule"},
+          {"name": "Vicious", "id": "5ca8-a97a-fab5-8ccd", "hidden": false, "targetId": "7ab6-3cc6-82ce-2437", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "c066-e731-cbd1-7926",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          },
+          {
+            "field": "8276-f72c-43ce-0b65",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Orclings",
+            "id": "22de-476b-a097-8836",
+            "hidden": false,
+            "typeId": "8146-3b99-e6f9-d0a1",
+            "typeName": " Warband Member",
+            "characteristics": [
+              {"name": "Sp", "$text": "6", "typeId": "cf71-9092-4511-812d"},
+              {"name": "Me", "$text": "4+", "typeId": "2554-7056-7252-7cb0"},
+              {"name": "Ra", "$text": "-", "typeId": "bc43-4f04-cc0b-d5a1"},
+              {"name": "Ar", "$text": "7+", "typeId": "cbb8-58cf-daa7-a95a"},
+              {"name": "Ne", "$text": "7+", "typeId": "945e-25f3-67f4-228d"},
+              {"name": "Wn", "$text": "2", "typeId": "0d6a-358f-3234-b66b"},
+              {"name": "H", "$text": "1", "typeId": "492c-c3ca-0905-99c9"},
+              {"name": "Ranged", "$text": "-", "typeId": "0a27-40ac-5701-ef13"},
+              {"name": "Melee", "$text": "2D8", "typeId": "01d6-153a-0767-f01e"},
+              {"name": "Alignment", "$text": "Evil", "typeId": "e9b1-68cd-5cbd-0251"},
+              {"name": "Race", "$text": "Orcling", "typeId": "3ce2-af00-1127-86fb"},
+              {"name": "Base", "$text": "40mm", "typeId": "b790-5251-7057-2f74"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ax",
+        "id": "096a-3465-bd6d-2ff7",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "e12b-42d6-6271-2122", "hidden": false, "primary": true, "targetId": "acf5-674c-f31b-80a2"}],
+        "constraints": [
+          {
+            "id": "1f85-675b-6b5d-83dd",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "3734-3c1c-d6b8-29c2",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          },
+          {
+            "id": "f0fe-54a0-24d6-b983",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "419f-be21-35bf-41b8",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "b888-e3bd-8798-6364", "value": 12}],
+        "entryLinks": [
+          {
+            "name": "Items - Common",
+            "id": "5d54-1b42-4c04-2b5d",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "c9c8-ac7b-333d-0312",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Rule Check - Base Unit Count",
+            "id": "84e6-5120-0dec-4179",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "dc91-bbea-46b0-1c4c",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Rule Check - Has Crushing Strength",
+            "id": "3d6d-77d0-b777-439b",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "20f3-f38a-c195-9e11",
+            "type": "selectionEntry"
+          }
+        ],
+        "infoLinks": [{"name": "Crushing Strength (1)", "id": "eb00-6f0a-3048-7f7c", "hidden": false, "targetId": "4c89-1651-1e0c-f54a", "type": "rule"}],
+        "modifiers": [
+          {
+            "field": "f0fe-54a0-24d6-b983",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          },
+          {
+            "field": "1f85-675b-6b5d-83dd",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Ax",
+            "id": "5c2f-5b30-25c6-fa22",
+            "hidden": false,
+            "typeId": "8146-3b99-e6f9-d0a1",
+            "typeName": " Warband Member",
+            "characteristics": [
+              {"name": "Sp", "$text": "5", "typeId": "cf71-9092-4511-812d"},
+              {"name": "Me", "$text": "4+", "typeId": "2554-7056-7252-7cb0"},
+              {"name": "Ra", "$text": "7+", "typeId": "bc43-4f04-cc0b-d5a1"},
+              {"name": "Ar", "$text": "5+", "typeId": "cbb8-58cf-daa7-a95a"},
+              {"name": "Ne", "$text": "5+", "typeId": "945e-25f3-67f4-228d"},
+              {"name": "Wn", "$text": "2", "typeId": "0d6a-358f-3234-b66b"},
+              {"name": "H", "$text": "2", "typeId": "492c-c3ca-0905-99c9"},
+              {"name": "Ranged", "$text": "1D8", "typeId": "0a27-40ac-5701-ef13"},
+              {"name": "Melee", "$text": "2D8", "typeId": "01d6-153a-0767-f01e"},
+              {"name": "Alignment", "$text": "Evil", "typeId": "e9b1-68cd-5cbd-0251"},
+              {"name": "Race", "$text": "Orc", "typeId": "3ce2-af00-1127-86fb"},
+              {"name": "Base", "$text": "25mm", "typeId": "b790-5251-7057-2f74"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Krusher",
+        "id": "a0a5-9e4d-e46a-696d",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "3ff8-8e0d-b25f-3b05", "hidden": false, "primary": true, "targetId": "8fce-4123-76c7-3f6f"}],
+        "constraints": [
+          {
+            "id": "a986-73e9-2a4c-e97f",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "3734-3c1c-d6b8-29c2",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          },
+          {
+            "id": "da9a-8552-dab2-7890",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "419f-be21-35bf-41b8",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "b888-e3bd-8798-6364", "value": 34}],
+        "entryLinks": [
+          {
+            "name": " Items",
+            "id": "bc58-1362-1022-28a5",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "c9c8-ac7b-333d-0312",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Rule Check - Has Crushing Strength",
+            "id": "31ed-8e0e-c90d-c017",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "20f3-f38a-c195-9e11",
+            "type": "selectionEntry"
+          }
+        ],
+        "infoLinks": [
+          {"name": "Crushing Strength (1)", "id": "9b3b-b5be-04ae-3878", "hidden": false, "targetId": "4c89-1651-1e0c-f54a", "type": "rule"},
+          {"name": "Vicious", "id": "ea31-9797-83d4-d61c", "hidden": false, "targetId": "7ab6-3cc6-82ce-2437", "type": "rule"},
+          {"name": "Power Dice White (1)", "id": "2611-4a73-b942-e74b", "hidden": false, "targetId": "fb0f-ab7c-3175-77f3", "type": "rule"},
+          {"name": "Inspiring (Grunts & Warriors only)", "id": "a4fc-93f5-b28f-5836", "hidden": false, "targetId": "393c-e681-96ad-82c7", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "a986-73e9-2a4c-e97f",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          },
+          {
+            "field": "da9a-8552-dab2-7890",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Krusher",
+            "id": "afed-8fd8-92b7-6107",
+            "hidden": false,
+            "typeId": "8146-3b99-e6f9-d0a1",
+            "typeName": " Warband Member",
+            "characteristics": [
+              {"name": "Sp", "$text": "5", "typeId": "cf71-9092-4511-812d"},
+              {"name": "Me", "$text": "4+", "typeId": "2554-7056-7252-7cb0"},
+              {"name": "Ra", "$text": "7+", "typeId": "bc43-4f04-cc0b-d5a1"},
+              {"name": "Ar", "$text": "4+", "typeId": "cbb8-58cf-daa7-a95a"},
+              {"name": "Ne", "$text": "5+", "typeId": "945e-25f3-67f4-228d"},
+              {"name": "Wn", "$text": "4", "typeId": "0d6a-358f-3234-b66b"},
+              {"name": "H", "$text": "2", "typeId": "492c-c3ca-0905-99c9"},
+              {"name": "Ranged", "$text": "1D8", "typeId": "0a27-40ac-5701-ef13"},
+              {"name": "Melee", "$text": "3D8", "typeId": "01d6-153a-0767-f01e"},
+              {"name": "Alignment", "$text": "Evil", "typeId": "e9b1-68cd-5cbd-0251"},
+              {"name": "Race", "$text": "Orc", "typeId": "3ce2-af00-1127-86fb"},
+              {"name": "Base", "$text": "25mm", "typeId": "b790-5251-7057-2f74"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Skulk",
+        "id": "0201-c335-cda8-b856",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "14ee-0e8e-ce58-4068", "hidden": false, "primary": true, "targetId": "acf5-674c-f31b-80a2"}],
+        "constraints": [
+          {
+            "id": "1b07-f459-01e6-970b",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "3734-3c1c-d6b8-29c2",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          },
+          {
+            "id": "ca08-2d5a-a065-be85",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "419f-be21-35bf-41b8",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "b888-e3bd-8798-6364", "value": 12}],
+        "entryLinks": [
+          {
+            "name": "Items - Common",
+            "id": "e385-38d3-fb95-d9a8",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "c9c8-ac7b-333d-0312",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Bow",
+            "id": "123a-0f77-6d58-2936",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "7487-3e07-b4f1-eda5",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "96e8-47e0-a7ad-af7e",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "5ee8-9fa0-9beb-4197",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "b888-e3bd-8798-6364", "type": "set", "value": 0}]
+          },
+          {
+            "name": "Rule Check - Base Unit Count",
+            "id": "f82c-45b0-12b8-6fd4",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "dc91-bbea-46b0-1c4c",
+            "type": "selectionEntry"
+          }
+        ],
+        "infoLinks": [{"name": "Pathfinder", "id": "7e83-387b-c32f-ab1b", "hidden": false, "targetId": "d784-105b-8a37-5071", "type": "rule"}],
+        "modifiers": [
+          {
+            "field": "1b07-f459-01e6-970b",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          },
+          {
+            "field": "ca08-2d5a-a065-be85",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Skulk",
+            "id": "5226-e80e-17ef-5556",
+            "hidden": false,
+            "typeId": "8146-3b99-e6f9-d0a1",
+            "typeName": " Warband Member",
+            "characteristics": [
+              {"name": "Sp", "$text": "5", "typeId": "cf71-9092-4511-812d"},
+              {"name": "Me", "$text": "6+", "typeId": "2554-7056-7252-7cb0"},
+              {"name": "Ra", "$text": "5+", "typeId": "bc43-4f04-cc0b-d5a1"},
+              {"name": "Ar", "$text": "6+", "typeId": "cbb8-58cf-daa7-a95a"},
+              {"name": "Ne", "$text": "5+", "typeId": "945e-25f3-67f4-228d"},
+              {"name": "Wn", "$text": "2", "typeId": "0d6a-358f-3234-b66b"},
+              {"name": "H", "$text": "2", "typeId": "492c-c3ca-0905-99c9"},
+              {"name": "Ranged", "$text": "2D8", "typeId": "0a27-40ac-5701-ef13"},
+              {"name": "Melee", "$text": "1D8", "typeId": "01d6-153a-0767-f01e"},
+              {"name": "Alignment", "$text": "Evil", "typeId": "e9b1-68cd-5cbd-0251"},
+              {"name": "Race", "$text": "Orc", "typeId": "3ce2-af00-1127-86fb"},
+              {"name": "Base", "$text": "25mm", "typeId": "b790-5251-7057-2f74"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Morax",
+        "id": "78ae-fea2-b95f-7f7d",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "b82c-d7db-934b-3917", "hidden": false, "primary": true, "targetId": "29ef-0bb1-9ab6-8e5c"}],
+        "constraints": [
+          {
+            "id": "02a5-ae2b-b210-83d3",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "3734-3c1c-d6b8-29c2",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          },
+          {
+            "id": "38b6-a6b9-061a-9b6e",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "419f-be21-35bf-41b8",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "b888-e3bd-8798-6364", "value": 22}],
+        "entryLinks": [
+          {
+            "name": " Items",
+            "id": "990f-8c35-64eb-ff0d",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "c9c8-ac7b-333d-0312",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Rule Check - Base Unit Count",
+            "id": "641f-8c65-a9c4-5cbe",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "dc91-bbea-46b0-1c4c",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Rule Check - Has Crushing Strength",
+            "id": "018f-da00-8865-ed96",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "20f3-f38a-c195-9e11",
+            "type": "selectionEntry"
+          }
+        ],
+        "infoLinks": [
+          {"name": "Crushing Strength (1)", "id": "bd8c-5d58-6048-c3dc", "hidden": false, "targetId": "4c89-1651-1e0c-f54a", "type": "rule"},
+          {"name": "Vicious", "id": "2fab-0fff-a921-e323", "hidden": false, "targetId": "7ab6-3cc6-82ce-2437", "type": "rule"},
+          {"name": "Frenzy (1)", "id": "0d5b-a179-1139-8e0f", "hidden": false, "targetId": "19ed-2e2a-44a9-25df", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "02a5-ae2b-b210-83d3",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          },
+          {
+            "field": "38b6-a6b9-061a-9b6e",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Morax",
+            "id": "1f81-13e9-bcda-ba33",
+            "hidden": false,
+            "typeId": "8146-3b99-e6f9-d0a1",
+            "typeName": " Warband Member",
+            "characteristics": [
+              {"name": "Sp", "$text": "5", "typeId": "cf71-9092-4511-812d"},
+              {"name": "Me", "$text": "3+", "typeId": "2554-7056-7252-7cb0"},
+              {"name": "Ra", "$text": "-", "typeId": "bc43-4f04-cc0b-d5a1"},
+              {"name": "Ar", "$text": "7+", "typeId": "cbb8-58cf-daa7-a95a"},
+              {"name": "Ne", "$text": "4+", "typeId": "945e-25f3-67f4-228d"},
+              {"name": "Wn", "$text": "3", "typeId": "0d6a-358f-3234-b66b"},
+              {"name": "H", "$text": "2", "typeId": "492c-c3ca-0905-99c9"},
+              {"name": "Ranged", "$text": "-", "typeId": "0a27-40ac-5701-ef13"},
+              {"name": "Melee", "$text": "3D8", "typeId": "01d6-153a-0767-f01e"},
+              {"name": "Alignment", "$text": "Evil", "typeId": "e9b1-68cd-5cbd-0251"},
+              {"name": "Race", "$text": "Orc", "typeId": "3ce2-af00-1127-86fb"},
+              {"name": "Base", "$text": "25mm", "typeId": "b790-5251-7057-2f74"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Greatax",
+        "id": "f04f-2d0d-f98e-477e",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "a4a2-ae5e-1de2-98aa", "hidden": false, "primary": true, "targetId": "29ef-0bb1-9ab6-8e5c"}],
+        "constraints": [
+          {
+            "id": "dd5c-78c0-2359-174d",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "3734-3c1c-d6b8-29c2",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          },
+          {
+            "id": "9f74-d11e-b279-5348",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "419f-be21-35bf-41b8",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "b888-e3bd-8798-6364", "value": 16}],
+        "entryLinks": [
+          {
+            "name": " Items",
+            "id": "8ea6-d927-1d06-4674",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "c9c8-ac7b-333d-0312",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Rule Check - Base Unit Count",
+            "id": "27d6-57ed-c901-73c5",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "dc91-bbea-46b0-1c4c",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Rule Check - Has Crushing Strength",
+            "id": "5287-2683-4e8f-2065",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "20f3-f38a-c195-9e11",
+            "type": "selectionEntry"
+          }
+        ],
+        "infoLinks": [{"name": "Crushing Strength (2)", "id": "97aa-cf4d-379a-66f7", "hidden": false, "targetId": "dbde-2f47-77ef-7c4b", "type": "rule"}],
+        "modifiers": [
+          {
+            "field": "dd5c-78c0-2359-174d",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          },
+          {
+            "field": "9f74-d11e-b279-5348",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Greatax",
+            "id": "d287-6178-ea2a-4492",
+            "hidden": false,
+            "typeId": "8146-3b99-e6f9-d0a1",
+            "typeName": " Warband Member",
+            "characteristics": [
+              {"name": "Sp", "$text": "5", "typeId": "cf71-9092-4511-812d"},
+              {"name": "Me", "$text": "4+", "typeId": "2554-7056-7252-7cb0"},
+              {"name": "Ra", "$text": "7+", "typeId": "bc43-4f04-cc0b-d5a1"},
+              {"name": "Ar", "$text": "6+", "typeId": "cbb8-58cf-daa7-a95a"},
+              {"name": "Ne", "$text": "5+", "typeId": "945e-25f3-67f4-228d"},
+              {"name": "Wn", "$text": "2", "typeId": "0d6a-358f-3234-b66b"},
+              {"name": "H", "$text": "2", "typeId": "492c-c3ca-0905-99c9"},
+              {"name": "Ranged", "$text": "1D8", "typeId": "0a27-40ac-5701-ef13"},
+              {"name": "Melee", "$text": "3D8", "typeId": "01d6-153a-0767-f01e"},
+              {"name": "Alignment", "$text": "Evil", "typeId": "e9b1-68cd-5cbd-0251"},
+              {"name": "Race", "$text": "Orc", "typeId": "3ce2-af00-1127-86fb"},
+              {"name": "Base", "$text": "25mm", "typeId": "b790-5251-7057-2f74"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Gore Rider",
+        "id": "2ff2-1427-66a9-6794",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "dd91-86df-560e-8ceb", "hidden": false, "primary": true, "targetId": "c194-28e4-665e-319c"}],
+        "constraints": [
+          {
+            "id": "e1ac-6716-2ec0-3120",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "3734-3c1c-d6b8-29c2",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          },
+          {
+            "id": "903c-aaa9-5f09-82f4",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "419f-be21-35bf-41b8",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "b888-e3bd-8798-6364", "value": 24}],
+        "entryLinks": [
+          {
+            "name": " Items",
+            "id": "fac7-c30c-dae7-a888",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "c9c8-ac7b-333d-0312",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Rule Check - Has Crushing Strength",
+            "id": "e3ea-189c-08d6-5919",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "20f3-f38a-c195-9e11",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Rule Check - Has Cavalry Rule",
+            "id": "cd40-a946-3e1d-41c5",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "ee27-5180-c83c-e4a1",
+            "type": "selectionEntry"
+          }
+        ],
+        "infoLinks": [
+          {"name": "Crushing Strength (1)", "id": "a326-26a5-01bd-d332", "hidden": false, "targetId": "4c89-1651-1e0c-f54a", "type": "rule"},
+          {"name": "Smash", "id": "36b8-d8b1-125b-ec2e", "hidden": false, "targetId": "68df-368d-fd73-8e4b", "type": "rule"},
+          {"name": "Cavalry", "id": "73fe-3bfa-db09-3d9c", "hidden": false, "targetId": "8a34-74be-5d22-bf2e", "type": "rule"},
+          {"name": "Gore (1)", "id": "84e2-4a56-7ced-2704", "hidden": false, "targetId": "c22b-1026-a0dd-e1a7", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "e1ac-6716-2ec0-3120",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          },
+          {
+            "field": "903c-aaa9-5f09-82f4",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Gore Rider",
+            "id": "d228-4c22-0f38-74f7",
+            "hidden": false,
+            "typeId": "8146-3b99-e6f9-d0a1",
+            "typeName": " Warband Member",
+            "characteristics": [
+              {"name": "Sp", "$text": "7", "typeId": "cf71-9092-4511-812d"},
+              {"name": "Me", "$text": "4+", "typeId": "2554-7056-7252-7cb0"},
+              {"name": "Ra", "$text": "-", "typeId": "bc43-4f04-cc0b-d5a1"},
+              {"name": "Ar", "$text": "5+", "typeId": "cbb8-58cf-daa7-a95a"},
+              {"name": "Ne", "$text": "5+", "typeId": "945e-25f3-67f4-228d"},
+              {"name": "Wn", "$text": "2", "typeId": "0d6a-358f-3234-b66b"},
+              {"name": "H", "$text": "3", "typeId": "492c-c3ca-0905-99c9"},
+              {"name": "Ranged", "$text": "-", "typeId": "0a27-40ac-5701-ef13"},
+              {"name": "Melee", "$text": "3D8", "typeId": "01d6-153a-0767-f01e"},
+              {"name": "Alignment", "$text": "Evil", "typeId": "e9b1-68cd-5cbd-0251"},
+              {"name": "Race", "$text": "Orc", "typeId": "3ce2-af00-1127-86fb"},
+              {"name": "Base", "$text": "Cav", "typeId": "b790-5251-7057-2f74"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Troll",
+        "id": "ec9b-4397-5c06-c63f",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "8507-43ad-d72d-cde8", "hidden": false, "primary": true, "targetId": "5386-cda4-ccc0-f38d"}],
+        "constraints": [
+          {
+            "id": "9f67-5c8d-b8a1-dd01",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "3734-3c1c-d6b8-29c2",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          },
+          {
+            "id": "8227-3f36-9ac9-0a59",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "419f-be21-35bf-41b8",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "b888-e3bd-8798-6364", "value": 34}],
+        "entryLinks": [
+          {
+            "name": " Items",
+            "id": "f5ea-54ea-68f1-dcb4",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "c9c8-ac7b-333d-0312",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Rule Check - Has Crushing Strength",
+            "id": "cea3-6d60-8474-16de",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "20f3-f38a-c195-9e11",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Rule Check - Has Regenerate",
+            "id": "1d47-4727-4e1f-7ace",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "c881-2d1c-afd4-6d5f",
+            "type": "selectionEntry"
+          }
+        ],
+        "infoLinks": [
+          {"name": "Crushing Strength (2)", "id": "ecd9-476e-d62a-7dca", "hidden": false, "targetId": "dbde-2f47-77ef-7c4b", "type": "rule"},
+          {"name": "Regenerate (6+)", "id": "40d7-8f48-7085-8fdd", "hidden": false, "targetId": "2314-80d9-833b-9841", "type": "rule"},
+          {"name": "Pound", "id": "6dd0-ae75-1dad-6f9c", "hidden": false, "targetId": "7fd8-583b-4c57-d0c9", "type": "rule"},
+          {"name": "Vicious Swipe", "id": "7eda-38bf-4000-01d1", "hidden": false, "targetId": "e30a-6249-5d89-dbb6", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "9f67-5c8d-b8a1-dd01",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          },
+          {
+            "field": "8227-3f36-9ac9-0a59",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Troll",
+            "id": "5d59-d983-7f4b-da35",
+            "hidden": false,
+            "typeId": "8146-3b99-e6f9-d0a1",
+            "typeName": " Warband Member",
+            "characteristics": [
+              {"name": "Sp", "$text": "6", "typeId": "cf71-9092-4511-812d"},
+              {"name": "Me", "$text": "5+", "typeId": "2554-7056-7252-7cb0"},
+              {"name": "Ra", "$text": "-", "typeId": "bc43-4f04-cc0b-d5a1"},
+              {"name": "Ar", "$text": "4+", "typeId": "cbb8-58cf-daa7-a95a"},
+              {"name": "Ne", "$text": "4+", "typeId": "945e-25f3-67f4-228d"},
+              {"name": "Wn", "$text": "4", "typeId": "0d6a-358f-3234-b66b"},
+              {"name": "H", "$text": "3", "typeId": "492c-c3ca-0905-99c9"},
+              {"name": "Ranged", "$text": "-", "typeId": "0a27-40ac-5701-ef13"},
+              {"name": "Melee", "$text": "5D8", "typeId": "01d6-153a-0767-f01e"},
+              {"name": "Alignment", "$text": "Evil", "typeId": "e9b1-68cd-5cbd-0251"},
+              {"name": "Race", "$text": "Troll", "typeId": "3ce2-af00-1127-86fb"},
+              {"name": "Base", "$text": "40mm", "typeId": "b790-5251-7057-2f74"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Krudger",
+        "id": "7abb-a6d6-9629-3332",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "4083-58c1-bcba-d604", "hidden": false, "primary": true, "targetId": "8fce-4123-76c7-3f6f"}],
+        "constraints": [
+          {
+            "id": "9f1d-a401-0d6b-5378",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "3734-3c1c-d6b8-29c2",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          },
+          {
+            "id": "ae2f-3ec6-b425-d520",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "419f-be21-35bf-41b8",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "b888-e3bd-8798-6364", "value": 45}],
+        "entryLinks": [
+          {
+            "name": " Items",
+            "id": "d4a3-16a1-3d81-3f41",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "c9c8-ac7b-333d-0312",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Rule Check - Has Crushing Strength",
+            "id": "040a-d6d3-c9c4-c005",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "20f3-f38a-c195-9e11",
+            "type": "selectionEntry"
+          }
+        ],
+        "infoLinks": [
+          {"name": "Crushing Strength (1)", "id": "e2b3-6627-45fb-bb17", "hidden": false, "targetId": "4c89-1651-1e0c-f54a", "type": "rule"},
+          {"name": "Vicious", "id": "3b43-10d5-155a-a3eb", "hidden": false, "targetId": "7ab6-3cc6-82ce-2437", "type": "rule"},
+          {"name": "Savage (1)", "id": "1b36-abfd-6d93-4c49", "hidden": false, "targetId": "6abf-1bc0-adce-cc64", "type": "rule"},
+          {"name": "Inspiring", "id": "38dc-b76a-418b-a5e4", "hidden": false, "targetId": "c182-1549-6080-b945", "type": "rule"},
+          {"name": "Power Dice Red (2)", "id": "abf3-5067-5b5b-d1c1", "hidden": false, "targetId": "5606-f1ee-89dc-5257", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "9f1d-a401-0d6b-5378",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          },
+          {
+            "field": "ae2f-3ec6-b425-d520",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Krudger",
+            "id": "fbd7-4558-3e52-7405",
+            "hidden": false,
+            "typeId": "8146-3b99-e6f9-d0a1",
+            "typeName": " Warband Member",
+            "characteristics": [
+              {"name": "Sp", "$text": "5", "typeId": "cf71-9092-4511-812d"},
+              {"name": "Me", "$text": "3+", "typeId": "2554-7056-7252-7cb0"},
+              {"name": "Ra", "$text": "7+", "typeId": "bc43-4f04-cc0b-d5a1"},
+              {"name": "Ar", "$text": "4+", "typeId": "cbb8-58cf-daa7-a95a"},
+              {"name": "Ne", "$text": "4+", "typeId": "945e-25f3-67f4-228d"},
+              {"name": "Wn", "$text": "4", "typeId": "0d6a-358f-3234-b66b"},
+              {"name": "H", "$text": "2", "typeId": "492c-c3ca-0905-99c9"},
+              {"name": "Ranged", "$text": "1D8", "typeId": "0a27-40ac-5701-ef13"},
+              {"name": "Melee", "$text": "4D8", "typeId": "01d6-153a-0767-f01e"},
+              {"name": "Alignment", "$text": "Evil", "typeId": "e9b1-68cd-5cbd-0251"},
+              {"name": "Race", "$text": "Orc", "typeId": "3ce2-af00-1127-86fb"},
+              {"name": "Base", "$text": "25mm", "typeId": "b790-5251-7057-2f74"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "God Speaker",
+        "id": "de8b-9d42-61c7-9239",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "1834-355e-3701-4179", "hidden": false, "primary": true, "targetId": "e745-e5aa-ccb6-cecb"}],
+        "constraints": [
+          {
+            "id": "b373-1c17-0981-0269",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "3734-3c1c-d6b8-29c2",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          },
+          {
+            "id": "46fb-780c-6d27-8357",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "419f-be21-35bf-41b8",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "b888-e3bd-8798-6364", "value": 31}],
+        "entryLinks": [
+          {
+            "name": " Items",
+            "id": "3b6c-6321-2711-4fc3",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "c9c8-ac7b-333d-0312",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Spellbook - Basic God Speaker",
+            "id": "9cb3-3dd4-a8f4-5248",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "c912-fb67-aa12-175d",
+            "type": "selectionEntryGroup",
+            "constraints": [
+              {
+                "id": "ebbb-3213-b8b2-7b2d",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 3
+              },
+              {
+                "id": "bd33-5cc3-4226-d678",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 3
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "ebbb-3213-b8b2-7b2d",
+                "type": "decrement",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "8264-6e8e-3e44-c2c9",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "de8b-9d42-61c7-9239",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "bd33-5cc3-4226-d678",
+                "type": "decrement",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "3e58-7c35-62d0-1808",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "de8b-9d42-61c7-9239",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Spellbook - Orcs (Free)",
+            "id": "1184-1ca2-0904-a211",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "3e58-7c35-62d0-1808",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Spellbook - Corrupt",
+            "id": "ea68-caaf-6603-19b0",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "2924-30ce-7cca-d3bc",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Spellbook - Orcs (Paid)",
+            "id": "608d-961a-6220-491f",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "ce50-b589-73b8-ff32",
+            "type": "selectionEntryGroup"
+          }
+        ],
+        "infoLinks": [
+          {"name": "Headstrong", "id": "6e98-f90e-3649-b4f7", "hidden": false, "targetId": "895c-93e1-e820-84d0", "type": "rule"},
+          {"name": "Power Dice White (1)", "id": "3df2-e4e4-4920-f032", "hidden": false, "targetId": "fb0f-ab7c-3175-77f3", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "b373-1c17-0981-0269",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          },
+          {
+            "field": "46fb-780c-6d27-8357",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "God Speaker",
+            "id": "726c-9124-9620-697c",
+            "hidden": false,
+            "typeId": "8146-3b99-e6f9-d0a1",
+            "typeName": " Warband Member",
+            "characteristics": [
+              {"name": "Sp", "$text": "5", "typeId": "cf71-9092-4511-812d"},
+              {"name": "Me", "$text": "5+", "typeId": "2554-7056-7252-7cb0"},
+              {"name": "Ra", "$text": "4+", "typeId": "bc43-4f04-cc0b-d5a1"},
+              {"name": "Ar", "$text": "6+", "typeId": "cbb8-58cf-daa7-a95a"},
+              {"name": "Ne", "$text": "4+", "typeId": "945e-25f3-67f4-228d"},
+              {"name": "Wn", "$text": "3", "typeId": "0d6a-358f-3234-b66b"},
+              {"name": "H", "$text": "2", "typeId": "492c-c3ca-0905-99c9"},
+              {"name": "Ranged", "$text": "1D8", "typeId": "0a27-40ac-5701-ef13"},
+              {"name": "Melee", "$text": "2D8", "typeId": "01d6-153a-0767-f01e"},
+              {"name": "Alignment", "$text": "Evil", "typeId": "e9b1-68cd-5cbd-0251"},
+              {"name": "Race", "$text": "Orc", "typeId": "3ce2-af00-1127-86fb"},
+              {"name": "Base", "$text": "25mm", "typeId": "b790-5251-7057-2f74"}
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedRules": [
+      {
+        "name": "Spell - God-fuel",
+        "id": "7726-330f-aa8f-507a",
+        "description": "Roll 4D8. For each 5+ rolled, remove a Fatigue counterfrom a friendly model within 6” of the caster. The caster is then marked as Fatigued.",
+        "hidden": false
+      },
+      {
+        "name": "Spell - Green Rage",
+        "id": "72f8-f88d-2782-e3b2",
+        "description": "Target a single friendly, non-Fatigued, un-Activated and un-Engaged model. If a hit is scored, the model suffers no wounds but must make an immediate Run move to Engage an enemy model. A free Melee attack will be granted for a qualifying Charge Action as normal. Resolve the attack as normal and then mark the model that Ran as Fatigued (not Activated) before continuing with the caster’s Turn. If an enemy model cannot be Engaged, the target model will Walk towards the closest enemy model instead.",
+        "hidden": false
+      },
+      {
+        "name": "FRENZY (1)",
+        "id": "19ed-2e2a-44a9-25df",
+        "description": "Use this ability to gain 2 bonus dice when this model makes a Melee attack (not a Retaliation). Spend the power before rolling any dice. Cannot be used in conjunction with the normal use of Power to gain a bonus dice for a roll.",
+        "hidden": false
+      },
+      {
+        "name": "GORE (1)",
+        "id": "c22b-1026-a0dd-e1a7",
+        "description": "Use this ability when making a Melee attack with this model. The model has the Bloodlust special rule until the end of its Turn. However, it gains 2 bonus dice instead of 1 if the target model is already wounded.",
+        "hidden": false
+      },
+      {
+        "name": "Vicious Swipe",
+        "id": "e30a-6249-5d89-dbb6",
+        "description": "When attempting to Break Away from a Troll, enemy models have a -1 modifier when they make their Armour Save roll.",
+        "hidden": false
+      },
+      {
+        "name": "SAVAGE (2)",
+        "id": "6abf-1bc0-adce-cc64",
+        "description": "If the Krudger fails to kill a model in Melee, the enemy model is Knocked-down. Use the ability after armour rolls are made. Cannot be used on LARGE models.",
+        "hidden": false
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Green Rage (short)",
+        "id": "2d98-a0a4-6e86-14a5",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "3e54-c374-d6db-a659",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "e745-e5aa-ccb6-cecb",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "b888-e3bd-8798-6364", "value": 0}],
+        "entryLinks": [
+          {
+            "name": "Rule Check - Is Faction Spell",
+            "id": "a438-3f55-d41d-7d11",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "8264-6e8e-3e44-c2c9",
+            "type": "selectionEntry"
+          }
+        ],
+        "infoLinks": [{"name": "Spell - Green Rage", "id": "d9ea-cb9b-7a7c-de3e", "hidden": false, "targetId": "72f8-f88d-2782-e3b2", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Green Rage (short)",
+            "id": "8bfe-724b-c892-cd02",
+            "hidden": false,
+            "typeId": "33dc-fb92-76ea-f796",
+            "typeName": "Spells",
+            "characteristics": [
+              {"name": "Range", "$text": "12\"", "typeId": "c023-a997-9c10-c42c"},
+              {"name": "Dice Roll", "$text": "1D8", "typeId": "8297-1752-8ed2-7571"},
+              {"name": "Boostable", "$text": "-", "typeId": "7f9e-a120-a045-f95b"},
+              {"name": "Rules", "typeId": "8b19-fa5a-3224-b8b5"},
+              {"name": "Rules Boosted", "typeId": "ed87-4c1b-85df-b365"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "God-fuel (long)",
+        "id": "0e5e-0f44-63f0-2d11",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "constraints": [
+          {
+            "id": "45d8-bff1-c93c-ec08",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "e745-e5aa-ccb6-cecb",
+            "shared": false,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "b888-e3bd-8798-6364", "value": 0}],
+        "entryLinks": [
+          {
+            "name": "Rule Check - Is Faction Spell",
+            "id": "2efb-e069-3ff7-5731",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "8264-6e8e-3e44-c2c9",
+            "type": "selectionEntry"
+          }
+        ],
+        "infoLinks": [{"name": "Spell - God-fuel", "id": "b13c-b797-b76e-3b77", "hidden": false, "targetId": "7726-330f-aa8f-507a", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "God-fuel (long)",
+            "id": "9eda-dce2-0ee2-f9bb",
+            "hidden": false,
+            "typeId": "33dc-fb92-76ea-f796",
+            "typeName": "Spells",
+            "characteristics": [
+              {"name": "Range", "$text": "6\"", "typeId": "c023-a997-9c10-c42c"},
+              {"name": "Dice Roll", "$text": "4D8", "typeId": "8297-1752-8ed2-7571"},
+              {"name": "Boostable", "$text": "-", "typeId": "7f9e-a120-a045-f95b"},
+              {"name": "Rules", "typeId": "8b19-fa5a-3224-b8b5"},
+              {"name": "Rules Boosted", "typeId": "ed87-4c1b-85df-b365"}
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": " Spellbook - Orcs (Free)",
+        "id": "3e58-7c35-62d0-1808",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "categoryLinks": [{"name": "New CategoryLink", "id": "34b6-2d11-827d-3fa1", "hidden": false, "primary": true, "targetId": "e745-e5aa-ccb6-cecb"}],
+        "constraints": [
+          {
+            "id": "c56e-ce96-ac15-bb21",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": true,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "God-fuel (long)",
+            "id": "0adb-e6ce-073f-c3d3",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "0e5e-0f44-63f0-2d11",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "cfa8-e5a9-456b-3e3b",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Green Rage (short)",
+            "id": "6350-5fb8-204f-5504",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "2d98-a0a4-6e86-14a5",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "b6ee-8189-6f7a-79b4",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": " Spellbook - Basic God Speaker",
+        "id": "c912-fb67-aa12-175d",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "categoryLinks": [{"name": "Spellcaster", "id": "5105-3b0b-acb1-039a", "hidden": false, "primary": true, "targetId": "e745-e5aa-ccb6-cecb"}],
+        "entryLinks": [
+          {
+            "name": "Fireball (short)",
+            "id": "f6a5-6d88-6372-7e53",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "1000-11e2-0937-9685",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Mind Storm (long)",
+            "id": "9407-90bb-fbbe-9ddb",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "97d8-9273-1780-9e7b",
+            "type": "selectionEntry"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "name": "God-fuel (short)",
+            "id": "e67c-f9bd-9d63-4ad5",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "type": "upgrade",
+            "constraints": [
+              {
+                "id": "6e7c-cdac-e129-6421",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": false,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "costs": [{"name": " Points", "typeId": "b888-e3bd-8798-6364", "value": 0}],
+            "infoLinks": [{"name": "Spell - God-fuel", "id": "6811-a1d3-ba8f-094c", "hidden": false, "targetId": "7726-330f-aa8f-507a", "type": "rule"}],
+            "profiles": [
+              {
+                "name": "God-fuel (short)",
+                "id": "c134-4de1-6a9b-341a",
+                "hidden": false,
+                "typeId": "33dc-fb92-76ea-f796",
+                "typeName": "Spells",
+                "characteristics": [
+                  {"name": "Range", "$text": "6\"", "typeId": "c023-a997-9c10-c42c"},
+                  {"name": "Dice Roll", "$text": "4D8", "typeId": "8297-1752-8ed2-7571"},
+                  {"name": "Boostable", "$text": "-", "typeId": "7f9e-a120-a045-f95b"},
+                  {"name": "Rules", "typeId": "8b19-fa5a-3224-b8b5"},
+                  {"name": "Rules Boosted", "typeId": "ed87-4c1b-85df-b365"}
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": " Spellbook - Orcs (Paid)",
+        "id": "ce50-b589-73b8-ff32",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "categoryLinks": [{"name": "New CategoryLink", "id": "af30-b055-39fc-d630", "hidden": false, "primary": true, "targetId": "e745-e5aa-ccb6-cecb"}],
+        "entryLinks": [
+          {
+            "name": "God-fuel (long)",
+            "id": "d972-5a9b-3c8e-3f86",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "0e5e-0f44-63f0-2d11",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "0dba-b78f-dea0-6ef3",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "b888-e3bd-8798-6364", "type": "set", "value": 10}]
+          },
+          {
+            "name": "Green Rage (short)",
+            "id": "981d-973a-bad9-6a5f",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "2d98-a0a4-6e86-14a5",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "a683-6cc7-3b82-e522",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "b888-e3bd-8798-6364", "type": "set", "value": 10}]
+          }
+        ]
+      }
+    ]
+  }
+}

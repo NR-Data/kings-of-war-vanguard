@@ -1,0 +1,1703 @@
+{
+  "catalogue": {
+    "name": "Kingdoms of men",
+    "id": "4ae3-a7bd-8c61-17e5",
+    "authorContact": "therealbitpsycho@gmail.com",
+    "authorName": "BitPsycho",
+    "battleScribeVersion": 2.03,
+    "gameSystemId": "37f5-f8f9-2ecf-9c36",
+    "gameSystemRevision": 1,
+    "library": false,
+    "revision": 9,
+    "type": "catalogue",
+    "xmlns": "http://www.battlescribe.net/schema/catalogueSchema",
+    "infoLinks": [{"name": "Strength of Men (1)", "id": "c77a-ff23-26e5-ba6a", "hidden": false, "targetId": "cf8f-0754-d0bc-d940", "type": "rule"}],
+    "publications": [{"name": "Rulebook", "id": "4ae3-a7bd-pubN68954"}],
+    "selectionEntries": [
+      {
+        "name": "Foot Soldier",
+        "id": "30bb-6e57-a0d0-20dc",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "8a8a-575a-db29-51e9", "hidden": false, "primary": true, "targetId": "acf5-674c-f31b-80a2"}],
+        "constraints": [
+          {
+            "id": "3695-b4ee-3043-fb3f",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "3734-3c1c-d6b8-29c2",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          },
+          {
+            "id": "342d-7179-0eed-4e17",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "419f-be21-35bf-41b8",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "b888-e3bd-8798-6364", "value": 7}],
+        "entryLinks": [
+          {
+            "name": "Items - Common",
+            "id": "5c21-cab0-fee7-27cb",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "c9c8-ac7b-333d-0312",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Spear",
+            "id": "920e-8ede-5f02-60f4",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "da36-7b90-c7e5-26c1",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "77fd-ca68-cefd-5cc6",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "04da-c9c9-a514-859c",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "modifiers": [
+              {"field": "b888-e3bd-8798-6364", "type": "set", "value": 0},
+              {
+                "field": "622e-e125-aee2-476c",
+                "type": "set",
+                "value": 0,
+                "conditions": [
+                  {
+                    "childId": "4f88-030a-c9af-53a7",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "30bb-6e57-a0d0-20dc",
+                    "shared": true,
+                    "type": "greaterThan",
+                    "value": 0
+                  }
+                ]
+              },
+              {
+                "field": "77fd-ca68-cefd-5cc6",
+                "type": "set",
+                "value": 1,
+                "conditions": [
+                  {
+                    "childId": "4f88-030a-c9af-53a7",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": false,
+                    "percentValue": false,
+                    "scope": "30bb-6e57-a0d0-20dc",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Rule Check - Base Unit Count",
+            "id": "a94f-d78a-9ce1-790e",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "dc91-bbea-46b0-1c4c",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Heavy Weapon",
+            "id": "7687-9f5a-6fd7-d524",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "25be-393f-0875-eae9",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "121c-e1d9-d66f-3f0c",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "75d2-b878-349e-da0b",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "b888-e3bd-8798-6364", "type": "set", "value": 2}]
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "3695-b4ee-3043-fb3f",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          },
+          {
+            "field": "342d-7179-0eed-4e17",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Foot Soldier",
+            "id": "da5a-252d-08de-e7f1",
+            "hidden": false,
+            "typeId": "8146-3b99-e6f9-d0a1",
+            "typeName": " Warband Member",
+            "characteristics": [
+              {"name": "Sp", "$text": "5", "typeId": "cf71-9092-4511-812d"},
+              {"name": "Me", "$text": "5+", "typeId": "2554-7056-7252-7cb0"},
+              {"name": "Ra", "$text": "-", "typeId": "bc43-4f04-cc0b-d5a1"},
+              {"name": "Ar", "$text": "6+", "typeId": "cbb8-58cf-daa7-a95a"},
+              {"name": "Ne", "$text": "6+", "typeId": "945e-25f3-67f4-228d"},
+              {"name": "Wn", "$text": "1", "typeId": "0d6a-358f-3234-b66b"},
+              {"name": "H", "$text": "2", "typeId": "492c-c3ca-0905-99c9"},
+              {"name": "Ranged", "$text": "-", "typeId": "0a27-40ac-5701-ef13"},
+              {"name": "Melee", "$text": "1D8", "typeId": "01d6-153a-0767-f01e"},
+              {"name": "Alignment", "$text": "Neutral", "typeId": "e9b1-68cd-5cbd-0251"},
+              {"name": "Race", "$text": "Human", "typeId": "3ce2-af00-1127-86fb"},
+              {"name": "Base", "$text": "20mm", "typeId": "b790-5251-7057-2f74"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Leader of Men",
+        "id": "e192-a8fb-a257-5bb6",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "551e-0992-7d37-1696", "hidden": false, "primary": true, "targetId": "8fce-4123-76c7-3f6f"}],
+        "constraints": [
+          {
+            "id": "a6e3-c0ea-1510-55ff",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "3734-3c1c-d6b8-29c2",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          },
+          {
+            "id": "bfcf-b28a-820c-a412",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "419f-be21-35bf-41b8",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "b888-e3bd-8798-6364", "value": 41}],
+        "entryLinks": [
+          {
+            "name": " Items",
+            "id": "4522-1195-1467-c66d",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "c9c8-ac7b-333d-0312",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Rule Check - Has Crushing Strength",
+            "id": "5c51-b484-a5c2-9987",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "20f3-f38a-c195-9e11",
+            "type": "selectionEntry"
+          }
+        ],
+        "infoLinks": [
+          {"name": "Crushing Strength (1)", "id": "daa3-ce60-0b80-fcd1", "hidden": false, "targetId": "4c89-1651-1e0c-f54a", "type": "rule"},
+          {"name": "Power Dice Blue (1)", "id": "6d47-3ebc-c39f-e8e7", "hidden": false, "targetId": "9f0b-f977-bb53-fe2e", "type": "rule"},
+          {"name": "Very Inspiring", "id": "67da-657e-d978-6563", "hidden": false, "targetId": "67df-803d-48b0-1418", "type": "rule"},
+          {"name": "For the Kingdom! (1)", "id": "1dbf-8791-074a-f5ea", "hidden": false, "targetId": "9456-6f8a-0f51-ca8f", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "a6e3-c0ea-1510-55ff",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          },
+          {
+            "field": "bfcf-b28a-820c-a412",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Leader of Men",
+            "id": "f923-b31f-7c41-d31f",
+            "hidden": false,
+            "typeId": "8146-3b99-e6f9-d0a1",
+            "typeName": " Warband Member",
+            "characteristics": [
+              {"name": "Sp", "$text": "4", "typeId": "cf71-9092-4511-812d"},
+              {"name": "Me", "$text": "4+", "typeId": "2554-7056-7252-7cb0"},
+              {"name": "Ra", "$text": "7+", "typeId": "bc43-4f04-cc0b-d5a1"},
+              {"name": "Ar", "$text": "4+", "typeId": "cbb8-58cf-daa7-a95a"},
+              {"name": "Ne", "$text": "4+", "typeId": "945e-25f3-67f4-228d"},
+              {"name": "Wn", "$text": "4", "typeId": "0d6a-358f-3234-b66b"},
+              {"name": "H", "$text": "2", "typeId": "492c-c3ca-0905-99c9"},
+              {"name": "Ranged", "$text": "2D8", "typeId": "0a27-40ac-5701-ef13"},
+              {"name": "Melee", "$text": "3D8", "typeId": "01d6-153a-0767-f01e"},
+              {"name": "Alignment", "$text": "Neutral", "typeId": "e9b1-68cd-5cbd-0251"},
+              {"name": "Race", "$text": "Human", "typeId": "3ce2-af00-1127-86fb"},
+              {"name": "Base", "$text": "20mm", "typeId": "b790-5251-7057-2f74"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Knight",
+        "id": "1410-7385-5d6b-f1b1",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "efaf-64f2-45f6-a686", "hidden": false, "primary": true, "targetId": "c194-28e4-665e-319c"}],
+        "constraints": [
+          {
+            "id": "a5cc-629e-386a-26f0",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "3734-3c1c-d6b8-29c2",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          },
+          {
+            "id": "ea6f-ff01-8aa8-338d",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "419f-be21-35bf-41b8",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "b888-e3bd-8798-6364", "value": 29}],
+        "entryLinks": [
+          {
+            "name": " Items",
+            "id": "1d36-05a1-ebc9-6c23",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "c9c8-ac7b-333d-0312",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Rule Check - Has Cavalry Rule",
+            "id": "cd40-a946-3e1d-41c5",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "ee27-5180-c83c-e4a1",
+            "type": "selectionEntry"
+          }
+        ],
+        "infoLinks": [
+          {"name": "Headstrong", "id": "c3ba-233d-bea1-c1f1", "hidden": false, "targetId": "895c-93e1-e820-84d0", "type": "rule"},
+          {"name": "Cavalry", "id": "4634-e2d8-de98-44c3", "hidden": false, "targetId": "8a34-74be-5d22-bf2e", "type": "rule"},
+          {"name": "Smash", "id": "90b0-bd02-2976-fa90", "hidden": false, "targetId": "68df-368d-fd73-8e4b", "type": "rule"},
+          {"name": "Devastating Charge", "id": "2854-ebd1-d42d-31ce", "hidden": false, "targetId": "7fb9-65c2-b83b-92a6", "type": "rule"},
+          {"name": "Power Dice Red (1)", "id": "0177-6b9d-47ed-c7a5", "hidden": false, "targetId": "df35-5711-86fa-5665", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "a5cc-629e-386a-26f0",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          },
+          {
+            "field": "ea6f-ff01-8aa8-338d",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Knight",
+            "id": "20b2-46f6-d90f-d9ca",
+            "hidden": false,
+            "typeId": "8146-3b99-e6f9-d0a1",
+            "typeName": " Warband Member",
+            "characteristics": [
+              {"name": "Sp", "$text": "7", "typeId": "cf71-9092-4511-812d"},
+              {"name": "Me", "$text": "4+", "typeId": "2554-7056-7252-7cb0"},
+              {"name": "Ra", "$text": "-", "typeId": "bc43-4f04-cc0b-d5a1"},
+              {"name": "Ar", "$text": "4+", "typeId": "cbb8-58cf-daa7-a95a"},
+              {"name": "Ne", "$text": "5+", "typeId": "945e-25f3-67f4-228d"},
+              {"name": "Wn", "$text": "2", "typeId": "0d6a-358f-3234-b66b"},
+              {"name": "H", "$text": "3", "typeId": "492c-c3ca-0905-99c9"},
+              {"name": "Ranged", "$text": "-", "typeId": "0a27-40ac-5701-ef13"},
+              {"name": "Melee", "$text": "3D8", "typeId": "01d6-153a-0767-f01e"},
+              {"name": "Alignment", "$text": "Neutral", "typeId": "e9b1-68cd-5cbd-0251"},
+              {"name": "Race", "$text": "Human", "typeId": "3ce2-af00-1127-86fb"},
+              {"name": "Base", "$text": "Cav", "typeId": "b790-5251-7057-2f74"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Berserker",
+        "id": "2425-1463-8bb9-50b2",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "3b67-754d-8c5f-3681", "hidden": false, "primary": true, "targetId": "29ef-0bb1-9ab6-8e5c"}],
+        "constraints": [
+          {
+            "id": "e353-c2b0-9378-6d2d",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "3734-3c1c-d6b8-29c2",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          },
+          {
+            "id": "945e-f4a0-d9de-8152",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "419f-be21-35bf-41b8",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "b888-e3bd-8798-6364", "value": 21}],
+        "entryLinks": [
+          {
+            "name": " Items",
+            "id": "7c93-3583-8d1a-788e",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "c9c8-ac7b-333d-0312",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Rule Check - Base Unit Count",
+            "id": "2d4d-8102-e40c-feed",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "dc91-bbea-46b0-1c4c",
+            "type": "selectionEntry"
+          }
+        ],
+        "infoLinks": [
+          {"name": "Steady", "id": "a13f-a073-674e-7657", "hidden": false, "targetId": "b26e-9018-2d56-fa19", "type": "rule"},
+          {"name": "Vicious", "id": "b424-57b2-175d-fdb5", "hidden": false, "targetId": "7ab6-3cc6-82ce-2437", "type": "rule"},
+          {"name": "Bloodlust", "id": "7295-327c-6739-b0c7", "hidden": false, "targetId": "4298-bc07-8bde-44db", "type": "rule"},
+          {"name": "Frenzy (1)", "id": "2436-2606-d37d-ac59", "hidden": false, "targetId": "7eb9-34c9-ac35-a0cb", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "e353-c2b0-9378-6d2d",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          },
+          {
+            "field": "945e-f4a0-d9de-8152",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Berserker",
+            "id": "231b-6911-010a-f004",
+            "hidden": false,
+            "typeId": "8146-3b99-e6f9-d0a1",
+            "typeName": " Warband Member",
+            "characteristics": [
+              {"name": "Sp", "$text": "5", "typeId": "cf71-9092-4511-812d"},
+              {"name": "Me", "$text": "4+", "typeId": "2554-7056-7252-7cb0"},
+              {"name": "Ra", "$text": "-", "typeId": "bc43-4f04-cc0b-d5a1"},
+              {"name": "Ar", "$text": "7+", "typeId": "cbb8-58cf-daa7-a95a"},
+              {"name": "Ne", "$text": "4+", "typeId": "945e-25f3-67f4-228d"},
+              {"name": "Wn", "$text": "3", "typeId": "0d6a-358f-3234-b66b"},
+              {"name": "H", "$text": "2", "typeId": "492c-c3ca-0905-99c9"},
+              {"name": "Ranged", "$text": "-", "typeId": "0a27-40ac-5701-ef13"},
+              {"name": "Melee", "$text": "3D8", "typeId": "01d6-153a-0767-f01e"},
+              {"name": "Alignment", "$text": "Neutral", "typeId": "e9b1-68cd-5cbd-0251"},
+              {"name": "Race", "$text": "Human", "typeId": "3ce2-af00-1127-86fb"},
+              {"name": "Base", "$text": "20mm", "typeId": "b790-5251-7057-2f74"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Veteran Soldier",
+        "id": "ff59-ef58-37e3-02d7",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "9fe5-3c4f-a05e-97ce", "hidden": false, "primary": true, "targetId": "c194-28e4-665e-319c"}],
+        "constraints": [
+          {
+            "id": "a32c-c236-7981-8fea",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "3734-3c1c-d6b8-29c2",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          },
+          {
+            "id": "e78b-6534-1a53-cc54",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "419f-be21-35bf-41b8",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "b888-e3bd-8798-6364", "value": 23}],
+        "entryLinks": [
+          {
+            "name": " Items",
+            "id": "7762-a164-28ab-2b5a",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "c9c8-ac7b-333d-0312",
+            "type": "selectionEntryGroup"
+          }
+        ],
+        "infoLinks": [
+          {"name": "Headstrong", "id": "b66d-d688-6470-2771", "hidden": false, "targetId": "895c-93e1-e820-84d0", "type": "rule"},
+          {"name": "Inspiring", "id": "fcd8-36f7-4bfe-ec80", "hidden": false, "targetId": "c182-1549-6080-b945", "type": "rule"},
+          {"name": "Power Dice Red (1)", "id": "bf68-d064-24fc-7f45", "hidden": false, "targetId": "df35-5711-86fa-5665", "type": "rule"}
+        ],
+        "modifiers": [
+          {
+            "field": "a32c-c236-7981-8fea",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          },
+          {
+            "field": "e78b-6534-1a53-cc54",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Veteran Soldier",
+            "id": "836d-d0b2-5b7b-0153",
+            "hidden": false,
+            "typeId": "8146-3b99-e6f9-d0a1",
+            "typeName": " Warband Member",
+            "characteristics": [
+              {"name": "Sp", "$text": "5", "typeId": "cf71-9092-4511-812d"},
+              {"name": "Me", "$text": "4+", "typeId": "2554-7056-7252-7cb0"},
+              {"name": "Ra", "$text": "7+", "typeId": "bc43-4f04-cc0b-d5a1"},
+              {"name": "Ar", "$text": "5+", "typeId": "cbb8-58cf-daa7-a95a"},
+              {"name": "Ne", "$text": "5+", "typeId": "945e-25f3-67f4-228d"},
+              {"name": "Wn", "$text": "3", "typeId": "0d6a-358f-3234-b66b"},
+              {"name": "H", "$text": "2", "typeId": "492c-c3ca-0905-99c9"},
+              {"name": "Ranged", "$text": "2D8", "typeId": "0a27-40ac-5701-ef13"},
+              {"name": "Melee", "$text": "3D8", "typeId": "01d6-153a-0767-f01e"},
+              {"name": "Alignment", "$text": "Neutral", "typeId": "e9b1-68cd-5cbd-0251"},
+              {"name": "Race", "$text": "Human", "typeId": "3ce2-af00-1127-86fb"},
+              {"name": "Base", "$text": "20mm", "typeId": "b790-5251-7057-2f74"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Foot Guard",
+        "id": "70ce-c0fe-b2e1-67b6",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "13e4-b130-f109-06ce", "hidden": false, "primary": true, "targetId": "29ef-0bb1-9ab6-8e5c"}],
+        "constraints": [
+          {
+            "id": "2ecb-ad25-4cf2-9097",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "3734-3c1c-d6b8-29c2",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          },
+          {
+            "id": "f059-10e8-7e1d-f0a6",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "419f-be21-35bf-41b8",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "b888-e3bd-8798-6364", "value": 12}],
+        "entryLinks": [
+          {
+            "name": " Items",
+            "id": "d429-8e7d-d86d-8c2c",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "c9c8-ac7b-333d-0312",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Large Shield",
+            "id": "82c6-9d88-5e34-5637",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "04d9-f451-24a2-d244",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "254a-db51-067d-672e",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 0
+              },
+              {
+                "id": "67a0-d16d-7b5d-f94b",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "b888-e3bd-8798-6364", "type": "set", "value": 2}]
+          },
+          {
+            "name": "Rule Check - Base Unit Count",
+            "id": "e865-1e0e-a6f7-a333",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "dc91-bbea-46b0-1c4c",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Rule Check - Has Crushing Strength",
+            "id": "c395-4b20-2a68-1624",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "20f3-f38a-c195-9e11",
+            "type": "selectionEntry"
+          }
+        ],
+        "infoLinks": [
+          {"name": "Crushing Strength (1)", "id": "5369-1bf1-8468-f4e8", "hidden": false, "targetId": "4c89-1651-1e0c-f54a", "type": "rule"},
+          {
+            "name": "Defender",
+            "id": "03c9-88f6-5d8d-9185",
+            "hidden": false,
+            "targetId": "a9d4-371e-0de9-bb9d",
+            "type": "rule",
+            "modifiers": [
+              {
+                "field": "hidden",
+                "type": "set",
+                "value": true,
+                "conditions": [
+                  {
+                    "childId": "04d9-f451-24a2-d244",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "scope": "70ce-c0fe-b2e1-67b6",
+                    "shared": true,
+                    "type": "equalTo",
+                    "value": 0
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "2ecb-ad25-4cf2-9097",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          },
+          {
+            "field": "f059-10e8-7e1d-f0a6",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Foot Guard",
+            "id": "ddbb-5787-711b-be01",
+            "hidden": false,
+            "typeId": "8146-3b99-e6f9-d0a1",
+            "typeName": " Warband Member",
+            "characteristics": [
+              {"name": "Sp", "$text": "5", "typeId": "cf71-9092-4511-812d"},
+              {"name": "Me", "$text": "4+", "typeId": "2554-7056-7252-7cb0"},
+              {"name": "Ra", "$text": "6+", "typeId": "bc43-4f04-cc0b-d5a1"},
+              {"name": "Ar", "$text": "5+", "typeId": "cbb8-58cf-daa7-a95a"},
+              {"name": "Ne", "$text": "5+", "typeId": "945e-25f3-67f4-228d"},
+              {"name": "Wn", "$text": "2", "typeId": "0d6a-358f-3234-b66b"},
+              {"name": "H", "$text": "2", "typeId": "492c-c3ca-0905-99c9"},
+              {"name": "Ranged", "$text": "1D8", "typeId": "0a27-40ac-5701-ef13"},
+              {"name": "Melee", "$text": "2D8", "typeId": "01d6-153a-0767-f01e"},
+              {"name": "Alignment", "$text": "Neutral", "typeId": "e9b1-68cd-5cbd-0251"},
+              {"name": "Race", "$text": "Human", "typeId": "3ce2-af00-1127-86fb"},
+              {"name": "Base", "$text": "20mm", "typeId": "b790-5251-7057-2f74"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Arquebusier",
+        "id": "0c0d-022b-7b67-bdd4",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "8621-fcaf-4f44-ef19", "hidden": false, "primary": true, "targetId": "29ef-0bb1-9ab6-8e5c"}],
+        "constraints": [
+          {
+            "id": "138e-1447-7775-acb5",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "3734-3c1c-d6b8-29c2",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          },
+          {
+            "id": "7fdf-fe79-d2f5-6813",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "419f-be21-35bf-41b8",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "b888-e3bd-8798-6364", "value": 12}],
+        "entryLinks": [
+          {
+            "name": " Items",
+            "id": "7097-c352-8c1f-f8d3",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "c9c8-ac7b-333d-0312",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Rifle",
+            "id": "0a59-3968-6366-f178",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "bd04-09be-458e-ae12",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "790f-f6e5-6af0-c910",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 1
+              },
+              {
+                "id": "4a50-8b2a-f57b-e2b1",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "b888-e3bd-8798-6364", "type": "set", "value": 0}]
+          },
+          {
+            "name": "Rule Check - Base Unit Count",
+            "id": "298b-15a0-91a3-dfd4",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "dc91-bbea-46b0-1c4c",
+            "type": "selectionEntry"
+          }
+        ],
+        "modifiers": [
+          {
+            "field": "7fdf-fe79-d2f5-6813",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          },
+          {
+            "field": "138e-1447-7775-acb5",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Arquebusier",
+            "id": "4016-cdf0-8c31-b64a",
+            "hidden": false,
+            "typeId": "8146-3b99-e6f9-d0a1",
+            "typeName": " Warband Member",
+            "characteristics": [
+              {"name": "Sp", "$text": "5", "typeId": "cf71-9092-4511-812d"},
+              {"name": "Me", "$text": "6+", "typeId": "2554-7056-7252-7cb0"},
+              {"name": "Ra", "$text": "5+", "typeId": "bc43-4f04-cc0b-d5a1"},
+              {"name": "Ar", "$text": "6+", "typeId": "cbb8-58cf-daa7-a95a"},
+              {"name": "Ne", "$text": "5+", "typeId": "945e-25f3-67f4-228d"},
+              {"name": "Wn", "$text": "2", "typeId": "0d6a-358f-3234-b66b"},
+              {"name": "H", "$text": "2", "typeId": "492c-c3ca-0905-99c9"},
+              {"name": "Ranged", "$text": "2D8", "typeId": "0a27-40ac-5701-ef13"},
+              {"name": "Melee", "$text": "1D8", "typeId": "01d6-153a-0767-f01e"},
+              {"name": "Alignment", "$text": "Neutral", "typeId": "e9b1-68cd-5cbd-0251"},
+              {"name": "Race", "$text": "Human", "typeId": "3ce2-af00-1127-86fb"},
+              {"name": "Base", "$text": "20mm", "typeId": "b790-5251-7057-2f74"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ogre Warrior",
+        "id": "c92d-604c-e00f-bb92",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "dfdf-a6b3-3adb-c9ef", "hidden": false, "primary": true, "targetId": "5386-cda4-ccc0-f38d"}],
+        "constraints": [
+          {
+            "id": "682e-d2a3-4766-caa1",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "a731-8a45-7af3-5326",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          },
+          {
+            "id": "853d-3e34-df12-a9d0",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "419f-be21-35bf-41b8",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "b888-e3bd-8798-6364", "value": 24}],
+        "entryLinks": [
+          {
+            "name": " Items",
+            "id": "423b-d8ea-879c-4c47",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "c9c8-ac7b-333d-0312",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": "Rule Check - Has Crushing Strength",
+            "id": "2236-33a8-a4a7-55d4",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "20f3-f38a-c195-9e11",
+            "type": "selectionEntry"
+          }
+        ],
+        "infoLinks": [{"name": "Crushing Strength (1)", "id": "64e5-65fd-4a39-908c", "hidden": false, "targetId": "4c89-1651-1e0c-f54a", "type": "rule"}],
+        "modifiers": [
+          {
+            "field": "682e-d2a3-4766-caa1",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          },
+          {
+            "field": "853d-3e34-df12-a9d0",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Ogre Warrior",
+            "id": "0098-f0c0-d012-70e1",
+            "hidden": false,
+            "typeId": "8146-3b99-e6f9-d0a1",
+            "typeName": " Warband Member",
+            "characteristics": [
+              {"name": "Sp", "$text": "6", "typeId": "cf71-9092-4511-812d"},
+              {"name": "Me", "$text": "4+", "typeId": "2554-7056-7252-7cb0"},
+              {"name": "Ra", "$text": "-", "typeId": "bc43-4f04-cc0b-d5a1"},
+              {"name": "Ar", "$text": "5+", "typeId": "cbb8-58cf-daa7-a95a"},
+              {"name": "Ne", "$text": "5+", "typeId": "945e-25f3-67f4-228d"},
+              {"name": "Wn", "$text": "3", "typeId": "0d6a-358f-3234-b66b"},
+              {"name": "H", "$text": "3", "typeId": "492c-c3ca-0905-99c9"},
+              {"name": "Ranged", "$text": "-", "typeId": "0a27-40ac-5701-ef13"},
+              {"name": "Melee", "$text": "4D8", "typeId": "01d6-153a-0767-f01e"},
+              {"name": "Alignment", "$text": "Neutral", "typeId": "e9b1-68cd-5cbd-0251"},
+              {"name": "Race", "$text": "Ogre", "typeId": "3ce2-af00-1127-86fb"},
+              {"name": "Base", "$text": "40mm", "typeId": "b790-5251-7057-2f74"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Wizard",
+        "id": "8444-955e-abb4-f580",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "model",
+        "categoryLinks": [{"name": "New CategoryLink", "id": "c294-6faa-f8c0-225f", "hidden": false, "primary": true, "targetId": "e745-e5aa-ccb6-cecb"}],
+        "constraints": [
+          {
+            "id": "7adb-4681-e0ef-c06e",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "3734-3c1c-d6b8-29c2",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          },
+          {
+            "id": "2a1c-c4a3-4361-edab",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "419f-be21-35bf-41b8",
+            "shared": true,
+            "type": "max",
+            "value": 0
+          }
+        ],
+        "costs": [{"name": " Points", "typeId": "b888-e3bd-8798-6364", "value": 24}],
+        "entryLinks": [
+          {
+            "name": " Items",
+            "id": "d0c9-d06f-d774-0192",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "c9c8-ac7b-333d-0312",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": " Spellbook - Basic Wizard",
+            "id": "27e3-427f-344b-423a",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "1e7e-880c-0d73-1421",
+            "type": "selectionEntryGroup",
+            "constraints": [
+              {
+                "id": "c02b-eed4-cbec-bd21",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "min",
+                "value": 3
+              },
+              {
+                "id": "60eb-4dd1-8c6d-2975",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 3
+              }
+            ],
+            "modifiers": [
+              {
+                "field": "60eb-4dd1-8c6d-2975",
+                "type": "decrement",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "7724-d8e9-4d28-e58a",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "8444-955e-abb4-f580",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "field": "c02b-eed4-cbec-bd21",
+                "type": "decrement",
+                "value": 1,
+                "repeats": [
+                  {
+                    "childId": "8264-6e8e-3e44-c2c9",
+                    "field": "selections",
+                    "includeChildForces": false,
+                    "includeChildSelections": true,
+                    "percentValue": false,
+                    "repeats": 1,
+                    "roundUp": false,
+                    "scope": "8444-955e-abb4-f580",
+                    "shared": true,
+                    "value": 1
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": " Spellbook - Kingdom of Men (Paid)",
+            "id": "ff66-99ea-2eb6-9592",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "0001-aea0-65b4-e4ce",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": " Spellbook - Primoridal",
+            "id": "5dc1-5ea0-97b1-9c38",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "6890-416f-3aac-976f",
+            "type": "selectionEntryGroup"
+          },
+          {
+            "name": " Spellbook - Kingdom of Men (Free)",
+            "id": "16c0-ed38-c775-a25a",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "7724-d8e9-4d28-e58a",
+            "type": "selectionEntryGroup"
+          }
+        ],
+        "infoLinks": [{"name": "Inspiring", "id": "0282-7cd4-c397-6b3a", "hidden": false, "targetId": "c182-1549-6080-b945", "type": "rule"}],
+        "modifiers": [
+          {
+            "field": "7adb-4681-e0ef-c06e",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          },
+          {
+            "field": "2a1c-c4a3-4361-edab",
+            "type": "increment",
+            "value": 1,
+            "repeats": [
+              {
+                "childId": "model",
+                "field": "limit::b888-e3bd-8798-6364",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "repeats": 1,
+                "roundUp": false,
+                "scope": "roster",
+                "shared": true,
+                "value": 40
+              }
+            ]
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Wizard",
+            "id": "6efc-3b78-1ac1-f719",
+            "hidden": false,
+            "typeId": "8146-3b99-e6f9-d0a1",
+            "typeName": " Warband Member",
+            "characteristics": [
+              {"name": "Sp", "$text": "5", "typeId": "cf71-9092-4511-812d"},
+              {"name": "Me", "$text": "5+", "typeId": "2554-7056-7252-7cb0"},
+              {"name": "Ra", "$text": "5+", "typeId": "bc43-4f04-cc0b-d5a1"},
+              {"name": "Ar", "$text": "5+", "typeId": "cbb8-58cf-daa7-a95a"},
+              {"name": "Ne", "$text": "5+", "typeId": "945e-25f3-67f4-228d"},
+              {"name": "Wn", "$text": "2", "typeId": "0d6a-358f-3234-b66b"},
+              {"name": "H", "$text": "2", "typeId": "492c-c3ca-0905-99c9"},
+              {"name": "Ranged", "$text": "1D8", "typeId": "0a27-40ac-5701-ef13"},
+              {"name": "Melee", "$text": "1D8", "typeId": "01d6-153a-0767-f01e"},
+              {"name": "Alignment", "$text": "Neutral", "typeId": "e9b1-68cd-5cbd-0251"},
+              {"name": "Race", "$text": "Human", "typeId": "3ce2-af00-1127-86fb"},
+              {"name": "Base", "$text": "20mm", "typeId": "b790-5251-7057-2f74"}
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedRules": [
+      {
+        "name": "STRENGTH OF MEN (1)",
+        "id": "cf8f-0754-d0bc-d940",
+        "description": "Spend power when any model in this warband fails a Nerve test to immediately allow them to re-roll that Nerve test. If they pass and are also within range of a model with Inspiring, they also gain Crushing Strength (1) (or add +1 to their value if they already have it) until the end of the round. Being in range of a model with Inspiring doesn’t grant a second re-roll.",
+        "hidden": false
+      },
+      {
+        "name": "Spell - Instill Courage",
+        "id": "3871-53bf-691a-3518",
+        "description": "No roll necessary. The target friendly model gains the Stubborn and Steady special rules until the end of the Round.",
+        "hidden": false
+      },
+      {
+        "name": "Spell - Adrenaline Shot",
+        "id": "49a0-7f9c-8dd1-5f0d",
+        "description": "Target a friendly model in range. For each hit scored, instead of causing damage, the target’s Ne and Ar stats are improved by 1 until the end of the Round.",
+        "hidden": false
+      },
+      {
+        "name": "Heavy Weapon",
+        "id": "71fa-07af-61bb-2b6a",
+        "description": "The model gains Crushing Strength (1) or adds +1 to its Crushing Strength value when making a Melee attack with this weapon",
+        "hidden": false
+      },
+      {
+        "name": "FOR THE KINGDOM! (1)",
+        "id": "9456-6f8a-0f51-ca8f",
+        "description": "Use this ability at any time during one of yout Turns. All friendly, unengaged, standing Human models within 9” of this model make an immediate free Walk action. Models do not have to be moved. but if they do, it must be directly\ntowards the Leader of Men model following the normal movement rules. This move cannot be used to Engage enemy models.",
+        "hidden": false
+      },
+      {
+        "name": "Devastating Charge",
+        "id": "7fb9-65c2-b83b-92a6",
+        "description": "This model gain Crushing Strength (2) for any free Melee action it gets following a qualifying Charge action.",
+        "hidden": false
+      },
+      {
+        "name": "FRENZY (1)",
+        "id": "7eb9-34c9-ac35-a0cb",
+        "description": "Use this ability to gain 2 bonus dice when this model makes a Melee Attack. Spend the power before rolling any dice. This may not be used with spending power to gain an extra dice normally. In effect, this ability replaces it.",
+        "hidden": false
+      },
+      {"name": "Equipment - Large Shield", "id": "58db-b8e8-62fe-ccfe", "description": "The model has the Defender special rule.", "hidden": false}
+    ],
+    "sharedSelectionEntries": [
+      {
+        "name": "Rifle",
+        "id": "bd04-09be-458e-ae12",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": " Points", "typeId": "b888-e3bd-8798-6364", "value": 2}],
+        "infoLinks": [
+          {"name": "Equipment - Marksman", "id": "98b2-e2f5-155f-3623", "hidden": false, "targetId": "9bcc-d59f-7ada-1a84", "type": "rule"},
+          {"name": "Equipment - Piercing (1)", "id": "f11a-69d9-914a-c1e5", "hidden": false, "targetId": "40b8-1250-1347-c904", "type": "rule"},
+          {"name": "Equipment - Reload", "id": "05e0-3d08-6188-2291", "hidden": false, "targetId": "e403-0d82-dc63-2958", "type": "rule"}
+        ],
+        "profiles": [
+          {
+            "name": "Rifle",
+            "id": "601d-8267-5d52-9b4c",
+            "hidden": false,
+            "typeId": "ee66-a079-031d-2e14",
+            "typeName": "Equipment - Shooting",
+            "characteristics": [
+              {"name": "Range", "$text": "12\"", "typeId": "1705-310a-e353-1da1"},
+              {"name": "Rules", "$text": "Marksman, Piercing (1), Reload", "typeId": "8da7-8859-a70e-c8a4"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Instill Courage (short)",
+        "id": "81c5-41b9-4e60-6468",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": " Points", "typeId": "b888-e3bd-8798-6364", "value": 0}],
+        "entryLinks": [
+          {
+            "name": "Rule Check - Is Faction Spell",
+            "id": "ad1e-2520-27e9-edf0",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "8264-6e8e-3e44-c2c9",
+            "type": "selectionEntry"
+          }
+        ],
+        "infoLinks": [{"name": "Spell - Instill Courage", "id": "f3fa-16cf-f4d8-216a", "hidden": false, "targetId": "3871-53bf-691a-3518", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Instill Courage (short)",
+            "id": "327b-c04f-04cb-b053",
+            "hidden": false,
+            "typeId": "33dc-fb92-76ea-f796",
+            "typeName": "Spells",
+            "characteristics": [
+              {"name": "Range", "$text": "9\"", "typeId": "c023-a997-9c10-c42c"},
+              {"name": "Dice Roll", "typeId": "8297-1752-8ed2-7571"},
+              {"name": "Boostable", "typeId": "7f9e-a120-a045-f95b"},
+              {"name": "Rules", "typeId": "8b19-fa5a-3224-b8b5"},
+              {"name": "Rules Boosted", "typeId": "ed87-4c1b-85df-b365"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Adrenaline Shot (short)",
+        "id": "e17f-88db-1820-4c70",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "type": "upgrade",
+        "costs": [{"name": " Points", "typeId": "b888-e3bd-8798-6364", "value": 0}],
+        "entryLinks": [
+          {
+            "name": "Rule Check - Is Faction Spell",
+            "id": "2d14-448e-1029-cb15",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "8264-6e8e-3e44-c2c9",
+            "type": "selectionEntry"
+          }
+        ],
+        "infoLinks": [{"name": "Spell - Adrenaline Shot", "id": "2020-1f44-05ef-d64b", "hidden": false, "targetId": "49a0-7f9c-8dd1-5f0d", "type": "rule"}],
+        "profiles": [
+          {
+            "name": "Adrenaline Shot (short)",
+            "id": "1952-4024-bc65-1e62",
+            "hidden": false,
+            "typeId": "33dc-fb92-76ea-f796",
+            "typeName": "Spells",
+            "characteristics": [
+              {"name": "Range", "$text": "9\"", "typeId": "c023-a997-9c10-c42c"},
+              {"name": "Dice Roll", "$text": "2D8", "typeId": "8297-1752-8ed2-7571"},
+              {"name": "Boostable", "$text": "-", "typeId": "7f9e-a120-a045-f95b"},
+              {"name": "Rules", "typeId": "8b19-fa5a-3224-b8b5"},
+              {"name": "Rules Boosted", "typeId": "ed87-4c1b-85df-b365"}
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": " Spellbook - Basic Wizard",
+        "id": "1e7e-880c-0d73-1421",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "page": 41,
+        "publicationId": "4ae3-a7bd-pubN68954",
+        "categoryLinks": [{"name": "Spellcaster", "id": "7355-8cf8-f052-d9d2", "hidden": false, "primary": true, "targetId": "e745-e5aa-ccb6-cecb"}],
+        "entryLinks": [
+          {
+            "name": "Fireball (short)",
+            "id": "b9f8-8ef9-e574-4699",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "1000-11e2-0937-9685",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Heal (short)",
+            "id": "170f-2bf1-e2ad-8a94",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "85f7-47a9-b45a-d785",
+            "type": "selectionEntry"
+          },
+          {
+            "name": "Lightning Bolt (long)",
+            "id": "4be8-ec10-94b7-0a48",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "5a49-5dec-45cd-0ef2",
+            "type": "selectionEntry"
+          }
+        ]
+      },
+      {
+        "name": " Spellbook - Kingdom of Men (Free)",
+        "id": "7724-d8e9-4d28-e58a",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "constraints": [
+          {
+            "id": "9fca-96b8-fd29-7424",
+            "field": "selections",
+            "includeChildForces": false,
+            "includeChildSelections": false,
+            "percentValue": false,
+            "scope": "parent",
+            "shared": true,
+            "type": "max",
+            "value": 1
+          }
+        ],
+        "entryLinks": [
+          {
+            "name": "Adrenaline Shot (short)",
+            "id": "2a6a-c061-a83d-4298",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "e17f-88db-1820-4c70",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "9848-37c1-36c1-bb66",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          },
+          {
+            "name": "Instill Courage (short)",
+            "id": "907e-96ef-b506-f621",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "81c5-41b9-4e60-6468",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "8714-0053-9263-51b9",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": " Spellbook - Kingdom of Men (Paid)",
+        "id": "0001-aea0-65b4-e4ce",
+        "collective": false,
+        "hidden": false,
+        "import": true,
+        "entryLinks": [
+          {
+            "name": "Adrenaline Shot (short)",
+            "id": "cba5-4dc7-8f6b-72bd",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "e17f-88db-1820-4c70",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "cf20-3e6c-7f56-96d7",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "b888-e3bd-8798-6364", "type": "set", "value": 10}]
+          },
+          {
+            "name": "Instill Courage (short)",
+            "id": "779a-341d-b525-1377",
+            "collective": false,
+            "hidden": false,
+            "import": true,
+            "targetId": "81c5-41b9-4e60-6468",
+            "type": "selectionEntry",
+            "constraints": [
+              {
+                "id": "754c-c318-d58f-25ee",
+                "field": "selections",
+                "includeChildForces": false,
+                "includeChildSelections": false,
+                "percentValue": false,
+                "scope": "parent",
+                "shared": true,
+                "type": "max",
+                "value": 1
+              }
+            ],
+            "modifiers": [{"field": "b888-e3bd-8798-6364", "type": "set", "value": 10}]
+          }
+        ]
+      }
+    ]
+  }
+}
